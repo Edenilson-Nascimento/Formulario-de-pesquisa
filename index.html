@@ -1,0 +1,91 @@
+<div class="main">
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  
+  <div class="formular">
+    <form id="survey-form" action="cadastro.php" method="POST">
+       
+     <label for="name" id="name-label">Name</label>
+     <input id="name" type="text"  placeholder="enter your name" required>
+     
+     <label for="email" id="email-label">Email</label>
+     <input id="email" type="email"  placeholder="enter your Email" required>
+ 
+     <label for="number" id="number-label">Age (optional)</label>
+     <input id="number" type="number"  placeholder="age" min="1" max="99" required>
+
+      <p for="dropdown">Which option best describes your current role?</p>
+     <select id="dropdown">
+       <optgroup label="Select current role">
+        <option value="student" >Student</option>
+        <option value="full Time job">Full Time job</option>
+        <option value="full Time Learner">Full Time Learner</option>
+        <option value="prefer not to say">Prefer not to say</option>
+        <option value="other">Other</option>
+       </optgroup>
+     </select>
+      
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+     <section id="refineds">
+      <input name="recommend" type="radio" id="defnitely" value="definitely"/>
+      <label for="defnitely">Definitely</label>
+      <br>
+      <input name="recommend" type="radio" id="maybe" value="maybe"/>
+      <label for="maybe">Maybe</label>
+     <br>
+      <input name="recommend" type="radio" id="not-sure" value="not-sure"/>
+      <label for="not-sure">Not sure</label>
+	 </section>
+<p for="dropdown">What is your favorite feature of freeCodeCamp?</p>
+      <select id="dropdown">
+        <optgroup label="Select an option">
+           <option value="challenges">Challenges</option>
+           <option value="projects">Projects</option>
+           <option value='community'>Community</option>
+           <option value="open source">Open Source</option>
+        </optgroup>
+      </select>
+<p>What would you like to see improved? (Check all that apply)</p>
+     
+     <section id="refineds">
+      <input name="refined" type="checkbox" id="front-end" value="front-end"/>
+      <label for="front-end">Front-end Projects</label>
+        <br>
+      <input name="refined" type="checkbox" id="back-end" value="back-end"/>
+      <label for="back-end">Back-end Projects</label>
+        <br>
+      <input name="refined" type="checkbox" id="data-visualization" value="data-visualization"/>
+      <label for="data-visualization">Data Visualization</label>
+       <br>
+      <input name="refined" type="checkbox" id="challenges" value="challenges"/>
+      <label for="challenges">Challenges</label>
+        <br>
+      <input name="refined" type="checkbox" id="open-source" value="open-source"/>
+      <label for="open-source-community">Open Source Community</label>
+        <br>
+      <input name="refined" type="checkbox" id="gitter-help" value="gitter-help"/>
+      <label for="gitter-help-rooms">Gitter help rooms</label>
+        <br>
+      <input name="refined" type="checkbox" id="videos" value="videos"/>
+      <label for="videos">Videos</label>
+        <br>
+      <input name="refined" type="checkbox" id="city-meetups" value="city-meetups"/>
+      <label for="city Meetups">City Meetups</label>
+        <br>
+      <input name="refined" type="checkbox" id="wiki" value="wiki"/>
+      <label for="wiki">Wiki</label>
+        <br>
+      <input name="refined" type="checkbox" id="forum" value="forum"/>
+      <label for="forum">Forum</label>
+      <br>
+      <input name="refined" type="checkbox" id="additional-courses" value="additional-courses"/>
+      <label for="additional-courses">Additional Courses</label>
+     </section>
+        <br>
+      <p for="comment">Any comments or suggestions?</p>
+      <textarea id="comment" rows="4" cols="50" placeholder="Enter your comment here..."></textarea>
+      <br>
+      <button id="submit" name="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
